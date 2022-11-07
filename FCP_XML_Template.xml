@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+	<sequence>
+		<duration>0</duration>
+		<rate>
+			<timebase>FRAME_RATE</timebase>
+			<ntsc>NTSC_BOOL</ntsc>
+		</rate>
+		<name>VIDEO_NAME - Sequence 01</name>
+		<media>
+
+			<video>
+
+				<format>
+					<samplecharacteristics>
+						<width>RES_WIDTH</width>
+						<height>RES_HEIGHT</height>
+						<rate>
+							<timebase>FRAME_RATE</timebase>
+							<ntsc>NTSC_BOOL</ntsc>
+						</rate>
+					</samplecharacteristics>
+				</format>
+
+				<track>
+					<clipitem>
+						<name>VIDEO_NAME</name>
+						<duration>VIDEO_DURATION</duration>
+						<rate>
+							<timebase>FRAME_RATE</timebase>
+							<ntsc>NTSC_BOOL</ntsc>
+						</rate>
+						<file id="1">
+							<pathurl>VIDEO_PATH</pathurl>
+							<media>
+								<video>
+								</video>
+								<audio>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+					</clipitem>
+				</track>
+
+			</video>
+			
+			<audio>
+
+				<track>
+					<clipitem>
+						<name>VIDEO_NAME</name>
+						<duration>VIDEO_DURATION</duration>
+						<rate>
+							<timebase>FRAME_RATE</timebase>
+							<ntsc>NTSC_BOOL</ntsc>
+						</rate>
+						<file id="1"/>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+					</clipitem>
+					<outputchannelindex>1</outputchannelindex>
+				</track>
+
+				<track>
+					<clipitem>
+						<name>spidey_mkv_to_mp4.mp4</name>
+						<duration>VIDEO_DURATION</duration>
+						<rate>
+							<timebase>FRAME_RATE</timebase>
+							<ntsc>NTSC_BOOL</ntsc>
+						</rate>
+
+						<file id="1"/>
+						<sourcetrack>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+					</clipitem>
+				</track>
+
+			</audio>
+		</media>
+
+MARKERS_XML
+			
+	</sequence>
+</xmeml>
